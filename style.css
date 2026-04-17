@@ -1,20 +1,134 @@
-nav {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  border-left: 4px solid #3b82f6;
+  padding-left: 10px;
+}
+
+/* Skills */
+.skills {
   display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
-  position: sticky;
-  top: 0;
-  background: rgba(15, 23, 42, 0.8);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  padding: 10px 15px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #3b82f6;
+  transform: scale(1.05);
+}
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
   backdrop-filter: blur(10px);
+  transition: 0.3s;
 }
 
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
+.card:hover {
+  transform: translateY(-8px);
 }
 
-nav a {
-  color: white;
+/* Lists inside cards */
+.card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+a {
+  color: #38bdf8;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Contact */
+#contact p {
+  margin: 8px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  margin-top: 40px;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
 }
