@@ -1,96 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshal Yeolekar | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshal Yeolekar | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Harshal Yeolekar</h1>
-        <p>Full Stack Developer | React Native | AI Applications</p>
-        <a href="mailto:harshya75@gmail.com" class="btn">Contact Me</a>
-    </header>
+  <!-- Navbar -->
+  <nav>
+    <h2>Harshal</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Software Developer with experience in full-stack web and cross-platform development.
-            Skilled in React, Node.js, and AI-powered applications. Currently working at 
-            Waterapp Technologies, building scalable apps using React Native and TypeScript.
-        </p>
-    </section>
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Hi, I'm Harshal 👋</h1>
+    <p>Full Stack Developer | React Native | AI Applications</p>
+    <a href="#projects" class="btn">View Work</a>
+  </header>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="grid">
-            <span>JavaScript</span>
-            <span>React.js</span>
-            <span>React Native</span>
-            <span>Node.js</span>
-            <span>Express.js</span>
-            <span>MongoDB</span>
-            <span>TypeScript</span>
-            <span>Supabase</span>
-            <span>GCP</span>
-            <span>Tailwind CSS</span>
-        </div>
-    </section>
+  <!-- About -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+      Software Developer with experience in full-stack web and cross-platform development.
+      Skilled in React, Node.js, and AI-powered applications. Currently working at Waterapp Technologies,
+      building scalable apps using React Native, TypeScript, Supabase, and GCP.
+    </p>
+  </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
+  <!-- Skills -->
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>JavaScript</span>
+      <span>React.js</span>
+      <span>React Native</span>
+      <span>Node.js</span>
+      <span>Express.js</span>
+      <span>MongoDB</span>
+      <span>TypeScript</span>
+      <span>Supabase</span>
+      <span>GCP</span>
+      <span>Tailwind CSS</span>
+    </div>
+  </section>
 
-        <div class="card">
-            <h3>Software Engineer - Waterapp Technologies</h3>
-            <p>Dec 2025 - Present</p>
-            <p>Building cross-platform apps using React Native, Supabase, and GCP.</p>
-        </div>
+  <!-- Experience -->
+  <section id="experience" class="fade-in">
+    <h2>Experience</h2>
 
-        <div class="card">
-            <h3>Software Developer - CompanyHub IT Solutions</h3>
-            <p>Mar 2022 - Dec 2025</p>
-            <p>Worked on API integrations, automation, and scalable backend systems.</p>
-        </div>
+    <div class="card">
+      <h3>Software Engineer — Waterapp Technologies Pvt. Ltd.</h3>
+      <p><i>Dec 2025 - Present</i></p>
+      <ul>
+        <li>Developed cross-platform apps using React Native (Expo) and TypeScript.</li>
+        <li>Used Supabase with Drizzle ORM for type-safe database operations.</li>
+        <li>Integrated Google Cloud Platform (GCP) for scalable backend services.</li>
+        <li>Improved performance, fixed bugs, and enhanced responsiveness.</li>
+        <li>Implemented new features based on product requirements.</li>
+      </ul>
+    </div>
 
-        <div class="card">
-            <h3>Android Developer - Kaarvaan Labs</h3>
-            <p>Sep 2021 - Feb 2022</p>
-        </div>
+    <div class="card">
+      <h3>Software Developer — CompanyHub IT Solutions Pvt. Ltd.</h3>
+      <p><i>Mar 2022 - Dec 2025</i></p>
+      <ul>
+        <li>Developed and integrated third-party APIs for automation platforms.</li>
+        <li>Built scalable connectors ensuring efficient data exchange.</li>
+        <li>Implemented authentication (OAuth2.0, API Keys, Webhooks).</li>
+        <li>Troubleshot API issues and optimized performance.</li>
+        <li>Collaborated with teams to deliver production-ready solutions.</li>
+      </ul>
+    </div>
 
-    </section>
+    <div class="card">
+      <h3>Android Developer — Kaarvaan Labs Pvt. Ltd.</h3>
+      <p><i>Sep 2021 - Feb 2022</i></p>
+      <ul>
+        <li>Developed Android apps with Firebase Cloud Messaging (FCM).</li>
+        <li>Implemented OTP authentication and Facebook login.</li>
+        <li>Designed UI using Material Design principles.</li>
+        <li>Optimized performance with caching and memory techniques.</li>
+        <li>Tested across multiple devices for reliability.</li>
+      </ul>
+    </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
+  </section>
 
-        <div class="card">
-            <h3>AI Image Generator</h3>
-            <p>MERN stack app using Together.ai API.</p>
-            <a href="https://ai-image-generator-sw4d.onrender.com/" target="_blank">Live</a>
-        </div>
+  <!-- Projects -->
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
 
-        <div class="card">
-            <h3>AI Code Generator</h3>
-            <p>Generates JavaScript code with explanations.</p>
-            <a href="https://ai-code-generator-tvm8.onrender.com/" target="_blank">Live</a>
-        </div>
+    <div class="card">
+      <h3>AI Image Generator</h3>
+      <p>MERN stack app generating images using Together.ai API.</p>
+      <a href="https://ai-image-generator-sw4d.onrender.com/" target="_blank">Live Project</a>
+    </div>
 
-    </section>
+    <div class="card">
+      <h3>AI Code Generator</h3>
+      <p>Generates JavaScript code with explanations using AI.</p>
+      <a href="https://ai-code-generator-tvm8.onrender.com/" target="_blank">Live Project</a>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: harshya75@gmail.com</p>
-        <p>LinkedIn: 
-            <a href="https://www.linkedin.com/in/harshal-yeolekar-4b0668156/" target="_blank">
-                View Profile
-            </a>
-        </p>
-    </section>
+  </section>
 
-    <footer>
-        <p>© 2026 Harshal Yeolekar</p>
-    </footer>
+  <!-- Contact -->
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>Email: harshya75@gmail.com</p>
+    <p>
+      <a href="https://www.linkedin.com/in/harshal-yeolekar-4b0668156/" target="_blank">
+        LinkedIn Profile
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Harshal Yeolekar</p>
+  </footer>
+
+  <script>
+    const elements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
