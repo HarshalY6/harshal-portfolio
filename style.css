@@ -1,59 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: white;
+  background: #0f172a;
+  color: #fff;
 }
 
-header {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #2563eb, #9333ea);
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
 }
 
-h1 {
-    font-size: 2.5rem;
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+}
+
+.hero h1 {
+  font-size: 3rem;
 }
 
 .btn {
-    background: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: white;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Sections */
 section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.grid span {
-    background: #1e293b;
-    padding: 10px;
-    border-radius: 5px;
+.skills span {
+  padding: 10px 15px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  transition: 0.3s;
 }
 
+.skills span:hover {
+  background: #3b82f6;
+}
+
+/* Cards */
 .card {
-    background: #1e293b;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
 }
 
-a {
-    color: #38bdf8;
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Lists */
+.card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Fade Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
+  text-align: center;
+  padding: 20px;
+  background: #020617;
 }
